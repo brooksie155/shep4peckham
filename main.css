@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'NexaRustExtras-Free';
+    src: url('NexaRustExtras-Free-webfont.woff2') format('woff2'),
+         url('fonts/nexarustextras_free/NexaRustExtras-Free-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaRustSlab';
+    src: url('fonts/nexarustsan_blackshadow01/NexaRustSlab-BlackShadow01-Free-webfont.woff2') format('woff2'),
+         url('fonts/nexarustslab_blackshadow01/NexaRustSlab-BlackShadow01-Free-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaRustSans';
+    src: url('fonts/nexarustsans_black/NexaRustSans-Black-Free-webfont.woff2') format('woff2'),
+         url('fonts/nexarustsans_black/NexaRustSans-Black-Free-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaRustScript';
+    src: url('fonts/nexarustscript_light1/NexaRustScriptL-0-Free-webfont.woff2') format('woff2'),
+         url('fonts/nexarustscript_light1/NexaRustScriptL-0-Free-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1, h2, h3 {
+    position:relative;
+}
+
+h1 {
+    font-size:10em; 
+}
+
+h2 {
+    font-size:4.2em; 
+}
+
+h3 {
+    font-size:1.8em;
+}
+
+.scriptFont { 
+    font-family: 'NexaRustScript'; 
+    color: rgb(240, 187, 43); 
+}
+
+.slabFont {
+    font-family: 'NexaRustSlab'; 
+    color: rgb(0,175, 157); 
+}
+
+.centered {
+    text-align:center;
+    width: 100%; 
+}
+
+.header { 
+    line-height: .8em;
+    position:static;
+}
+
+.voteShepHeadline {
+    line-height: 34px;
+    top: -40px;
+}
+
+.subHeader { 
+    font-family: 'NexaRustSans'; 
+    color: rgb(120, 181, 133); 
+    line-height: .2em;
+    top: -64px;
+} /* sage */
+
+.forText {
+    font-size: 3.2em;
+    line-height: .4em;   
+    position: absolute;
+    top: -10px;
+    left: 35px;
+    transform: rotate(-12deg);
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+.dottedLine {
+    position:relative;
+    border-top: dotted rgb(240, 187, 43) 6px;
+    border-collapse: collapse;
+    line-height:4px;
+    height:4px;
+}
+
+#profile {
+    padding: 8px;
+}
+
+#profile p {
+    text-align: justify;
+}
+
+#standfor h3 {
+    font-family: 'NexaRustSans'; 
+    color: rgb(120, 181, 133); 
+    height: 10px;
+}
+
+#standfor ul {
+    list-style: url('yellow-star.png');
+    list-style-type: 'square';
+    position: relative;
+    top: 5px;
+}
+
+#elctionInfo {
+    font-weight: bold;
+    color: rgb(120, 181, 133); 
+    padding: 4px 0 10px;
+    text-align: center;
+}
+
+/* Footer info */ 
+#info {
+    padding-top:6px;
+    line-height: 26px;
+    
+}
+
+#info .dottedLine {
+    border-left: dotted rgb(240, 187, 43) 6px;
+}
+
+#info .contact {
+    width:48%;
+}
+
+#info .contact span {
+    position: relative;
+    color: rgb(0,175, 157); 
+    top:3px;
+        
+}
+
+/* */
+#info #rememberToVote {
+    text-align: center;
+    width: 48%;
+}
+
+#info #rememberToVote {
+    text-align: center;
+    font-size:1.4em;    
+}
+
+#info #rememberToVote a {
+    text-align: center;
+    color: rgb(0,175, 157); 
+    font-size:.7em;
+    text-decoration: none;    
+    position: relative;
+    top: -4px;
+}
+
+.icoTwitter {
+    display: inline-block;
+    width:24px;
+    height:24px;
+    background-image: url('twitter.png');
+    background-repeat: no-repeat;
+
+}
+
+.icoMail {
+    display: inline-block;
+
+    width:24px;
+    height:24px;
+    background-image: url('mail.png');
+    background-repeat: no-repeat;
+}
