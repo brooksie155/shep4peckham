@@ -83,19 +83,39 @@ h3 {
     top: -64px;
 } /* sage */
 
+#container {
+    margin: 0 auto;
+    max-width: 750px;
+}
+
 .forText {
     font-size: 3.2em;
-    line-height: .4em;   
+    line-height: .4em;
     position: absolute;
     top: -10px;
-    left: 35px;
+    left: 115px;
     transform: rotate(-12deg);
 }
 
-#container {
-    margin: 0 auto;
-    max-width: 550px;
+
+/**
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px)
+  and (resolution: 150dpi) {
+
+.forText {
+    top: -10px;
+    left: 10%;
 }
+
+#container {
+	width : 70%;
+    max-width: 750px;
+}
+
+}
+*/
 
 .dottedLine {
     position:relative;
