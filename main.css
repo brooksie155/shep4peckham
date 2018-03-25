@@ -84,8 +84,8 @@ h3 {
 } /* sage */
 
 #container {
-    margin: 0 auto;
-    max-width: 750px;
+    /*margin: 0 auto;
+    max-width: 750px;*/
 }
 
 .forText {
@@ -211,5 +211,42 @@ h3 {
     height:24px;
     background-image: url('mail.png');
     background-repeat: no-repeat;
-    background-repeat: 
 }
+
+/* GRID */
+
+#container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'txtVote txtShep'
+    'independent4peckham independent4peckham'
+    'aboutWho aboutWhat'
+    'voteinfo voteinfo'
+    'contact govRegister'
+    'whoami whoami'
+    'whatistandfor whatistandfor'
+    'loveletter loveletter';
+  grid-gap: 5px;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+
+/*.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}*/
+
+.item1 { grid-area: header; }
+.item2a { grid-area: txtVote; text-align: right;}
+.item2b { grid-area: txtShep; text-align: left;}
+.item3 { grid-area: independent4peckham;}
+.item4 { grid-area: whoiam; }
+.item4 { grid-area: whatistandfor; }
+.item5 { grid-area: loveletter; }
+
+
+
+
