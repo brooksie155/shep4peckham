@@ -31,24 +31,29 @@
 }
 
 body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1, h2, h3 {
     position:relative;
+    margin: 0;
+    padding: 0;
+
 }
 
 h1 {
-    font-size:10em; 
+    font-size:6.2em; 
+    line-height: .9em;
 }
 
 h2 {
-    font-size:4.2em; 
+    font-size:2.8em; 
+    line-height: .6em;
 }
 
 h3 {
-    font-size:1.8em;
+    font-size:2.8em;
+    line-height: .6em;
 }
 
 .scriptFont { 
@@ -61,41 +66,34 @@ h3 {
     color: rgb(0,175, 157); 
 }
 
-.centered {
-    text-align:center;
-    width: 100%; 
-}
-
-.header { 
-    line-height: .8em;
-    position:static;
-}
-
-.voteShepHeadline {
-    line-height: 34px;
-    top: -40px;
-}
-
-.subHeader { 
+.sansFont {
     font-family: 'NexaRustSans'; 
     color: rgb(120, 181, 133); 
-    line-height: .2em;
-    top: -64px;
-} /* sage */
-
-#container {
-    /*margin: 0 auto;
-    max-width: 750px;*/
 }
 
 .forText {
-    font-size: 3.2em;
-    line-height: .4em;
+    font-size: 1.0em;
     position: absolute;
-    top: -10px;
-    left: 115px;
+    left: 46.4%;
     transform: rotate(-12deg);
 }
+
+.dottedLine {
+    position:relative;
+    border-top: dotted rgb(240, 187, 43) 6px;
+    border-collapse: collapse;
+    line-height:4px;
+    height:4px;
+    width: 100%;
+}
+
+/* end */
+
+
+
+
+
+
 
 
 /**
@@ -117,13 +115,11 @@ h3 {
 }
 */
 
-.dottedLine {
-    position:relative;
-    border-top: dotted rgb(240, 187, 43) 6px;
-    border-collapse: collapse;
-    line-height:4px;
-    height:4px;
-}
+
+
+
+
+
 
 #profile {
     padding: 8px;
@@ -213,40 +209,16 @@ h3 {
     background-repeat: no-repeat;
 }
 
-/* GRID */
-
-#container {
-  display: grid;
-  grid-template-areas:
-    'header header'
-    'txtVote txtShep'
-    'independent4peckham independent4peckham'
-    'aboutWho aboutWhat'
-    'voteinfo voteinfo'
-    'contact govRegister'
-    'whoami whoami'
-    'whatistandfor whatistandfor'
-    'loveletter loveletter';
-  grid-gap: 5px;
-  /*background-color: #2196F3;*/
-  padding: 10px;
+.icoStar {
+    display: inline-block;
+    width:44px;
+    height:44px;
+    background-image: url('yellow-star.png');
+    background-repeat: no-repeat;    
+    background-size: 44px;
 }
 
-/*.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+/*#header .icoStart {
+     width:4em;
+    height:4em;   
 }*/
-
-.item1 { grid-area: header; }
-.item2a { grid-area: txtVote; text-align: right;}
-.item2b { grid-area: txtShep; text-align: left;}
-.item3 { grid-area: independent4peckham;}
-.item4 { grid-area: whoiam; }
-.item4 { grid-area: whatistandfor; }
-.item5 { grid-area: loveletter; }
-
-
-
-

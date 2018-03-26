@@ -1,0 +1,37 @@
+nav ul {
+    opacity: 0.7;
+    width: 99%;
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    top: -16px;
+    z-index:1;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+nav .active {
+    background-color: #4CAF50;
+}
+
+/* nav .transition {    
+    -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+  } */
