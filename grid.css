@@ -6,18 +6,20 @@ body {
 
 #container { 
     display: grid;  /* 4 x 8 */
-    grid: "leftMargin header header rightMargin"
-          "leftMargin txtVote txtShep rightMargin"
-          "leftMargin independent independent rightMargin"
-          "leftMargin dottedLine dottedLine rightMargin"
-          "leftMargin whoSummary whatSummary rightMargin"
-          "leftMargin who who rightMargin"
-          "leftMargin what what rightMargin"
-          "leftMargin loveLetter loveLetter rightMargin"
-          "footer footer footer footer";
+    grid: 
+        "leftMargin header header rightMargin"              /* 80px */
+        "leftMargin txtVote txtShep rightMargin"            /* 120px */
+        "leftMargin independent independent rightMargin"    /* 80px */
+        "leftMargin dottedLine dottedLine rightMargin"      /* 5px */
+        "leftMargin whoSummary whatSummary rightMargin"     /* 1fr */
+
+        "leftMargin who who rightMargin"
+        "leftMargin what what rightMargin"
+        "leftMargin loveLetter loveLetter rightMargin"
+         "footer footer footer footer";
 
     grid-template-columns: 10% 1fr 1fr 10%; 
-    grid-template-rows: 80px 120px 80px 1fr auto; 
+    grid-template-rows: 80px 120px 80px 5px 1fr 5px auto; 
     grid-gap: 6px;
     align-items: stretch;
     height:110%;
@@ -94,6 +96,21 @@ body {
     grid-area: whoSummary; 
     justify-self: center;
     align-self: center;
+
+    padding: 10px;  
+    grid-gap: 20;
+    grid-column: 1fr 1fr;
+    display: subgrid;    
+}
+
+#whoSummaryImg {
+    justify-self: start;
+    align-self:start;
+}
+
+#whoSummaryTxt {
+    justify-self: end;
+    align-self:end;
 }
 
 #whatSummary {
