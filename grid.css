@@ -10,8 +10,9 @@ body {
         "leftMargin header header rightMargin"              /* 80px */
         "leftMargin txtVote txtShep rightMargin"            /* 120px */
         "leftMargin independent independent rightMargin"    /* 80px */
-        "leftMargin dottedLine dottedLine rightMargin"      /* 5px */
+        "leftMargin dottedLine-1 dottedLine-1 rightMargin"      /* 5px */
         "leftMargin whoSummary whatSummary rightMargin"     /* 1fr */
+        "leftMargin dottedLine-2 dottedLine-2 rightMargin"      /* 5px */
 
         "leftMargin who who rightMargin"
         "leftMargin what what rightMargin"
@@ -60,8 +61,12 @@ body {
     align-self: stretch;
 }
 
-.dottedLine {
-    grid-area: dottedLine;
+#dottedLine-1 {
+    grid-area: dottedLine-1;
+}
+
+#dottedLine-2 {
+    grid-area: dottedLine-2;
 }
 
 #footer {
@@ -97,20 +102,26 @@ body {
     justify-self: center;
     align-self: center;
 
-    padding: 10px;  
-    grid-gap: 20;
-    grid-column: 1fr 1fr;
-    display: subgrid;    
+    padding: 5px;  
+    grid-gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    display: grid;    
 }
 
 #whoSummaryImg {
-    justify-self: start;
-    align-self:start;
+    justify-self: center;
+    align-self: center;
+}
+
+#whoSummaryImg img {
+    width:280px;
 }
 
 #whoSummaryTxt {
-    justify-self: end;
-    align-self:end;
+    justify-self: center;
+    align-self:start;
+    padding:20px;
+    text-align: justify;
 }
 
 #whatSummary {

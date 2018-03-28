@@ -52,8 +52,8 @@ h2 {
 }
 
 h3 {
-    font-size:2.8em;
-    line-height: .6em;
+    font-size:2.2em;
+    line-height: 1.2em;
 }
 
 .scriptFont { 
@@ -86,6 +86,57 @@ h3 {
     height:4px;
     width: 100%;
 }
+
+.icoTwitter {
+    display: inline-block;
+    width:24px;
+    height:24px;
+    background-image: url('twitter.png');
+    background-repeat: no-repeat;
+
+}
+
+.icoMail {
+    display: inline-block;
+
+    width:24px;
+    height:24px;
+    background-image: url('mail.png');
+    background-repeat: no-repeat;
+}
+
+.icoStar {
+    display: inline-block;
+    width:34px;
+    height:34px;
+    background-image: url('yellow-star.png');
+    background-repeat: no-repeat;    
+    background-size: 32px;
+    background-position-y: 0.1em;
+}
+
+/* -- */
+
+#standfor h3 {
+    font-family: 'NexaRustSans'; 
+    color: rgb(120, 181, 133); 
+    font-size: 1.6em;
+    height: 6px;
+}
+
+#standfor ul {
+    list-style: url('yellow-star.png');
+    list-style-type: 'square';
+    position: relative;
+    top: 5px;
+}
+
+#standfor p {
+    display: block;
+    position:relative;
+    padding-top: 6px;
+}
+
 
 /* end */
 
@@ -129,18 +180,7 @@ h3 {
     text-align: justify;
 }
 
-#standfor h3 {
-    font-family: 'NexaRustSans'; 
-    color: rgb(120, 181, 133); 
-    height: 10px;
-}
 
-#standfor ul {
-    list-style: url('yellow-star.png');
-    list-style-type: 'square';
-    position: relative;
-    top: 5px;
-}
 
 #elctionInfo {
     font-weight: bold;
@@ -191,32 +231,7 @@ h3 {
     top: -4px;
 }
 
-.icoTwitter {
-    display: inline-block;
-    width:24px;
-    height:24px;
-    background-image: url('twitter.png');
-    background-repeat: no-repeat;
 
-}
-
-.icoMail {
-    display: inline-block;
-
-    width:24px;
-    height:24px;
-    background-image: url('mail.png');
-    background-repeat: no-repeat;
-}
-
-.icoStar {
-    display: inline-block;
-    width:44px;
-    height:44px;
-    background-image: url('yellow-star.png');
-    background-repeat: no-repeat;    
-    background-size: 44px;
-}
 
 /*#header .icoStart {
      width:4em;
