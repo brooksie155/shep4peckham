@@ -15,8 +15,14 @@ body {
         "leftMargin dottedLine-2 dottedLine-2 rightMargin"      /* 5px */
 
         "leftMargin who who rightMargin"
+        "leftMargin dottedLine-3 dottedLine-3 rightMargin"      /* 5px */
         "leftMargin what what rightMargin"
+        "leftMargin dottedLine-4 dottedLine-4 rightMargin"      /* 5px */        
         "leftMargin loveLetter loveLetter rightMargin"
+        "leftMargin dottedLine-5 dottedLine-5 rightMargin"      /* 5px */        
+        "leftMargin electionInfo electionInfo rightMargin"      /* 5px */        
+        "leftMargin dottedLine-6 dottedLine-6 rightMargin"      /* 5px */        
+        
          "footer footer footer footer";
 
     grid-template-columns: 10% 1fr 1fr 10%; 
@@ -68,6 +74,21 @@ body {
 #dottedLine-2 {
     grid-area: dottedLine-2;
 }
+#dottedLine-3 {
+    grid-area: dottedLine-3;
+}
+#dottedLine-4 {
+    grid-area: dottedLine-4;
+}
+#dottedLine-5 {
+    grid-area: dottedLine-5;
+}
+#dottedLine-6 {
+    grid-area: dottedLine-6;
+}
+#electionInfo {
+    grid-area: electionInfo;
+}
 
 #footer {
     grid-area: footer;
@@ -114,7 +135,9 @@ body {
 }
 
 #whoSummaryImg img {
-    width:280px;
+    width:300px;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 1px;
 }
 
 #whoSummaryTxt {

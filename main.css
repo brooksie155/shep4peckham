@@ -137,6 +137,12 @@ h3 {
     padding-top: 6px;
 }
 
+#electionInfo {
+    font-weight: bold;
+    color: rgb(120, 181, 133); 
+    padding: 4px 0 10px;
+    text-align: center;
+}
 
 /* end */
 
@@ -178,15 +184,6 @@ h3 {
 
 #profile p {
     text-align: justify;
-}
-
-
-
-#elctionInfo {
-    font-weight: bold;
-    color: rgb(120, 181, 133); 
-    padding: 4px 0 10px;
-    text-align: center;
 }
 
 /* Footer info */ 
