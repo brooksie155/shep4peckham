@@ -15,11 +15,11 @@ body {
         "leftMargin dottedLine-2 dottedLine-2 rightMargin"      /* 5px */
 
         "leftMargin who who rightMargin"
+        "leftMargin dottedLine-4 dottedLine-4 rightMargin"      /* 5px */        
+        "leftMargin indendentBanner indendentBanner rightMargin"
         "leftMargin dottedLine-3 dottedLine-3 rightMargin"      /* 5px */
         "leftMargin what what rightMargin"
-        "leftMargin dottedLine-4 dottedLine-4 rightMargin"      /* 5px */        
-        /*"leftMargin loveLetter loveLetter rightMargin"*/
-        /*"leftMargin dottedLine-5 dottedLine-5 rightMargin" */     /* 5px */        
+        "leftMargin dottedLine-5 dottedLine-5 rightMargin"      /* 5px */        
         "leftMargin electionInfo electionInfo rightMargin"      /* 5px */        
         "leftMargin dottedLine-6 dottedLine-6 rightMargin"      /* 5px */        
         
@@ -38,11 +38,7 @@ body {
     min-width: 1100px;
 }
 
-#dottedLine-5 {
-    display: none;
-}
-
-    /*  
+/*  
     -- equivalent by row/col numeric ref 
     grid-column: 1 / 3;
     grid-row: 1;     
@@ -155,8 +151,6 @@ body {
 
 #whoSummaryImg img {
     width:300px;
-    box-shadow: 1px 1px 5px grey;
-    border-radius: 1px;
 }
 
 #whoSummaryTxt {
@@ -180,8 +174,8 @@ body {
     grid-area: what; 
 }
 
-#loveLetter {
-    grid-area: loveLetter;  
+#indendentBanner {
+    grid-area: indendentBanner;  
 }
 
 

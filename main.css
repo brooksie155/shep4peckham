@@ -71,6 +71,11 @@ h3 {
     color: rgb(120, 181, 133); 
 }
 
+img {
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 1px;
+}
+
 .forText {
     font-size: 1.0em;
     position: absolute;
