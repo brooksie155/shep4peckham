@@ -146,38 +146,6 @@ h3 {
 
 /* end */
 
-
-
-
-
-
-
-
-/**
-@media only screen 
-  and (min-width: 320px) 
-  and (max-width: 480px)
-  and (resolution: 150dpi) {
-
-.forText {
-    top: -10px;
-    left: 10%;
-}
-
-#container {
-	width : 70%;
-    max-width: 750px;
-}
-
-}
-*/
-
-
-
-
-
-
-
 #profile {
     padding: 8px;
 }
@@ -187,21 +155,25 @@ h3 {
 }
 
 /* Footer info */ 
-#info {
-    padding-top:6px;
+#footer {
     line-height: 26px;
-    
 }
 
-#info .dottedLine {
+#footer .dottedLine {
+    display: inline-block; 
     border-left: dotted rgb(240, 187, 43) 6px;
+    border-collapse: collapse;
+    line-height:4px;
+    width:4px;
+    height: 120%;
+    top: -22px;
 }
 
-#info .contact {
+#footer #contact {
     width:48%;
 }
 
-#info .contact span {
+#footer #contact span {
     position: relative;
     color: rgb(0,175, 157); 
     top:3px;
@@ -209,17 +181,14 @@ h3 {
 }
 
 /* */
-#info #rememberToVote {
+#rememberToVote {
     text-align: center;
     width: 48%;
-}
-
-#info #rememberToVote {
-    text-align: center;
     font-size:1.4em;    
+    width:100%;
 }
 
-#info #rememberToVote a {
+#rememberToVote a {
     text-align: center;
     color: rgb(0,175, 157); 
     font-size:.7em;
@@ -228,9 +197,19 @@ h3 {
     top: -4px;
 }
 
+#what li, 
+#who li {
+    padding-bottom: 5px;
+    font-size:1.2em; 
+    color:#555;
+}
 
+#what h3,
+#who h3 {
+    text-align:center;
+}
 
-/*#header .icoStart {
-     width:4em;
-    height:4em;   
-}*/
+#what h2 {
+    left: 25px;
+    top:5px;
+}

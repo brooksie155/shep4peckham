@@ -1,5 +1,5 @@
 body {
-    background-color: #eee;
+    /*background-color: #eee;*/
 }
 
 /** GRID */
@@ -18,15 +18,15 @@ body {
         "leftMargin dottedLine-3 dottedLine-3 rightMargin"      /* 5px */
         "leftMargin what what rightMargin"
         "leftMargin dottedLine-4 dottedLine-4 rightMargin"      /* 5px */        
-        "leftMargin loveLetter loveLetter rightMargin"
-        "leftMargin dottedLine-5 dottedLine-5 rightMargin"      /* 5px */        
+        /*"leftMargin loveLetter loveLetter rightMargin"*/
+        /*"leftMargin dottedLine-5 dottedLine-5 rightMargin" */     /* 5px */        
         "leftMargin electionInfo electionInfo rightMargin"      /* 5px */        
         "leftMargin dottedLine-6 dottedLine-6 rightMargin"      /* 5px */        
         
-         "footer footer footer footer";
+         "leftMargin footer footer rightMargin";
 
     grid-template-columns: 10% 1fr 1fr 10%; 
-    grid-template-rows: 80px 120px 80px 5px 1fr 5px auto; 
+    grid-template-rows: 80px 120px 100px 5px 1fr 5px auto; 
     grid-gap: 6px;
     align-items: stretch;
     height:110%;
@@ -36,6 +36,10 @@ body {
     
     top:40px;
     min-width: 1100px;
+}
+
+#dottedLine-5 {
+    display: none;
 }
 
     /*  
@@ -93,8 +97,22 @@ body {
 #footer {
     grid-area: footer;
     background-color: #fff;
-    justify-self:  center;
+    justify-self:  stretch;
     align-self: stretch;
+
+    padding: 5px;  
+    grid-gap: 10px;
+    grid-template-columns: 1fr 5px 1fr;
+    display: grid;    
+}
+
+#footer #contact{
+    justify-content: start;
+}
+
+#footer #rememberToVote {
+    justify-content: center;
+    align-content: center;
 }
 
 #txtVote {
@@ -127,6 +145,7 @@ body {
     grid-gap: 10px;
     grid-template-rows: 1fr 1fr;
     display: grid;    
+    padding-top: 60px;
 }
 
 #whoSummaryImg {
@@ -149,6 +168,8 @@ body {
 
 #whatSummary {
     grid-area: whatSummary; 
+        padding-top: 40px;
+
 }
 
 #who {
