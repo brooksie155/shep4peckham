@@ -173,10 +173,11 @@ h3 {
     width:48%;
 }
 
-#footer #contact span {
+#footer #contact a {
     position: relative;
     color: rgb(0,175, 157); 
-    top:3px;
+    top:-3px;
+    text-decoration: none;
         
 }
 
