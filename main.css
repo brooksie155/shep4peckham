@@ -200,14 +200,24 @@ h3 {
 
 #what li, 
 #who li {
-    padding-bottom: 5px;
+    top: -5px;
+    padding-bottom: 8px;
     font-size:1.2em; 
     color:#555;
+}
+
+#what ul,
+#who ul {
+    list-style: url('yellow-star.png');
+    list-style-type: 'square';
+    position: relative;
+    list-style-position: outside;
 }
 
 #what h3,
 #who h3 {
     text-align:center;
+    margin-top:16px;
 }
 
 #what h2 {
