@@ -30,7 +30,6 @@ body {
     grid-gap: 6px;
     align-items: stretch;
     height:110%;
-    overflow: auto; 
     width:100%;
     position:relative;
     
