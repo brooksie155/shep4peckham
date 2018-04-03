@@ -47,3 +47,38 @@ nav .active {
       -o-transition: all 1s ease-in-out;
       transition: all 1s ease-in-out;
   } */
+
+
+  .panel {
+        z-index:0; 
+        -webkit-transform: translateZ( 0 );
+        transform: translateZ( 0 );
+        -webkit-transition: -webkit-transform 0.6s ease-in-out;
+        transition: transform 0.6s ease-in-out;
+        /* -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; */
+    }
+
+    /*
+    *Scrolling
+    */
+
+    a[ id= "voteshep" ]:target ~ #container #header.panel {
+        -webkit-transform: translateY( 0px);
+        transform: translateY( 0px );
+    }
+
+    a[ id= "what" ]:target ~ #container div.panel {
+        -webkit-transform: translateY( -1090px );
+        transform: translateY( -1090px );
+    }
+
+    a[ id= "who" ]:target ~ #container div.panel {
+        -webkit-transform: translateY( -2810px );
+        transform: translateY( -2810px );
+    }    
+
+    a[ id= "footer" ]:target ~ #container div.panel {
+        -webkit-transform: translateY( -4190px );
+        transform: translateY( -4190px );
+    }     
