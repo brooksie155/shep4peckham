@@ -11,7 +11,7 @@ body {
         "leftMargin txtVote txtShep rightMargin"            /* 120px */
         "leftMargin independent independent rightMargin"    /* 80px */
         "leftMargin dottedLine-1 dottedLine-1 rightMargin"      /* 5px */
-        "leftMargin whoSummary whatSummary rightMargin"     /* 1fr */
+        "leftMargin whoSummary whoSummary rightMargin"     /* 1fr */
         "leftMargin dottedLine-2 dottedLine-2 rightMargin"      /* 5px */
 
         "leftMargin what what rightMargin"
@@ -137,10 +137,8 @@ body {
     align-self: center;
 
     padding: 5px;  
-    grid-gap: 10px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     display: grid;    
-    padding-top: 60px;
 }
 
 #whoSummaryImg {
@@ -157,12 +155,6 @@ body {
     align-self:start;
     padding:20px;
     text-align: justify;
-}
-
-#whatSummary {
-    grid-area: whatSummary; 
-    padding-top: 40px;
-
 }
 
 #who {
