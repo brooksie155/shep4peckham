@@ -229,16 +229,16 @@ $(document).ready(function()
         var footer = $('#footer').position().top;
     
         if ( scrollBottom > footer) {
-            $('a').removeClass('active');
-            $('#aFooter').addClass('active');   
+            $('a').removeClass('active').removeClass('hover');
+            $('#aFooter').addClass('active').removeClass('hover');   
         } else if(scroll_top > header && scroll_top < what) {    
-            $('a').removeClass('active');
+            $('a').removeClass('active').removeClass('hover');
             $('#aHeader').addClass('active');
         } else if (scroll_top > what && scroll_top < who) {
-            $('a').removeClass('active');
+            $('a').removeClass('active').removeClass('hover');
             $('#aWhat').addClass('active');
         } else if (scroll_top > who && scroll_top < footer) {
-            $('a').removeClass('active');
+            $('a').removeClass('active').removeClass('hover');
             $('#aWho').addClass('active');
         };
     });
