@@ -26,7 +26,6 @@
 
     <div id='container'>
         <div id='header' class='panel'>    
-            <a name="voteshep"></a>
             <h3 class='scriptFont'>
                 <span class='icoStar'></span>
                 &nbsp;3 May 2018 Southwark Council Elections&nbsp;
@@ -37,10 +36,10 @@
         <div id='leftMargin'>
             <nav >
                 <ul class='scriptFont'>
-                    <li><a href='#header' class='active'>Vote Shep</a></li>
-                    <li><a href='#what'>What I Stand For</a></li>
-                    <li><a href='#who'>Who I Am</a></li>
-                    <li><a href='#footer'>More Info</a></li>
+                    <li><a href='#header' class='active' id='aHeader'>Vote Shep</a></li>
+                    <li><a href='#what' id='aWhat'>What I Stand For</a></li>
+                    <li><a href='#who' id='aWho'>Who I Am</a></li>
+                    <li><a href='#footer' id='aFooter'>More Info</a></li>
                 </ul>
             </nav>
 
@@ -219,6 +218,30 @@ $(document).ready(function()
         });
     } 
 
+
+    $(document).scroll(function() {
+
+        var scrollBottom = $(window).scrollTop() + $(window).height() - 300;
+        var scroll_top = $(document).scrollTop();
+        var header = $('#header').position().top;
+        var who = $('#who').position().top;
+        var what = $('#what').position().top;
+        var footer = $('#footer').position().top;
+    
+        if ( scrollBottom > footer) {
+            $('a').removeClass('active');
+            $('#aFooter').addClass('active');   
+        } else if(scroll_top > header && scroll_top < what) {    
+            $('a').removeClass('active');
+            $('#aHeader').addClass('active');
+        } else if (scroll_top > what && scroll_top < who) {
+            $('a').removeClass('active');
+            $('#aWhat').addClass('active');
+        } else if (scroll_top > who && scroll_top < footer) {
+            $('a').removeClass('active');
+            $('#aWho').addClass('active');
+        };
+    });
 
 });
 </script>
