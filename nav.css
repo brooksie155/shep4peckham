@@ -34,11 +34,12 @@ nav li:not(:first-child){
 }
 
 nav li a:hover {
-    color:rgb(240, 187, 43);
+    color: rgb(120, 181, 133);
 }
 
 nav .active {
-    background-color: rgb(120, 181, 133);
+    color:rgb(240, 187, 43);
+    
 }
 
 /* nav .transition {    

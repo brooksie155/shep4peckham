@@ -37,7 +37,7 @@
         <div id='leftMargin'>
             <nav >
                 <ul class='scriptFont'>
-                    <li><a href='#voteshep'>Vote Shep</a></li>
+                    <li><a href='#voteshep' class='active'>Vote Shep</a></li>
                     <li><a href='#what'>What I Stand For</a></li>
                     <li><a href='#who'>Who I Am</a></li>
                     <li><a href='#footer'>More Info</a></li>
@@ -172,4 +172,23 @@
     </div>
     
 </body>
+
+<script type="text/javascript">
+
+    // Get the container element
+    var btnContainer = document.getElementById("leftMargin");
+    
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByTagName("a");
+    
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = ""; //current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    } 
+</script>
+
 </html>
