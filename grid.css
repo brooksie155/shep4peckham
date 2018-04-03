@@ -25,7 +25,7 @@ body {
         
          "leftMargin footer footer rightMargin";
 
-    grid-template-columns: 10% 1fr 1fr 10%; 
+    grid-template-columns: 15% 1fr 1fr 5%; 
     grid-template-rows: 80px 120px 100px 5px 710px 5px auto; 
     grid-gap: 6px;
     align-items: stretch;
