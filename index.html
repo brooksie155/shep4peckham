@@ -214,7 +214,8 @@ $(document).ready(function()
         btns[i].addEventListener("click", function() {
             var current = document.getElementsByClassName("active");
             current[0].className = ""; //current[0].className.replace(" active", "");
-            this.className += " active";
+            this.className = " active";
+
         });
     } 
 
@@ -230,15 +231,15 @@ $(document).ready(function()
     
         if ( scrollBottom > footer) {
             $('a').removeClass('active').removeClass('hover');
-            $('#aFooter').addClass('active').removeClass('hover');   
+            $('#aFooter').addClass('active').removeClass('hover').addClass('noHover');   
         } else if(scroll_top > header && scroll_top < what) {    
-            $('a').removeClass('active').removeClass('hover');
+            $('a').removeClass('active').removeClass('hover').addClass('noHover');
             $('#aHeader').addClass('active');
         } else if (scroll_top > what && scroll_top < who) {
-            $('a').removeClass('active').removeClass('hover');
+            $('a').removeClass('active').removeClass('hover').addClass('noHover');
             $('#aWhat').addClass('active');
         } else if (scroll_top > who && scroll_top < footer) {
-            $('a').removeClass('active').removeClass('hover');
+            $('a').removeClass('active').removeClass('hover').addClass('noHover');
             $('#aWho').addClass('active');
         };
     });
