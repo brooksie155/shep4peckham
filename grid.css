@@ -12,6 +12,7 @@ body {
         "leftMargin independent independent rightMargin"    /* 80px */
         "leftMargin dottedLine-1 dottedLine-1 rightMargin"      /* 5px */
         "leftMargin whoSummary whoSummary rightMargin"     /* 1fr */
+        "leftMargin whoSummaryTxt whoSummaryTxt rightMargin"     /* 1fr */
         "leftMargin dottedLine-2 dottedLine-2 rightMargin"      /* 5px */
 
         "leftMargin what what rightMargin"
@@ -26,7 +27,7 @@ body {
          "leftMargin footer footer rightMargin";
 
     grid-template-columns: 15% 1fr 1fr 5%; 
-    grid-template-rows: 80px 120px 100px 5px 550px 5px auto; 
+    grid-template-rows: 80px 120px 100px 5px 400px 130px 5px auto; 
     grid-gap: 6px;
     align-items: stretch;
     height:110%;
@@ -137,7 +138,7 @@ body {
     align-self: center;
 
     padding: 5px;  
-    grid-template-rows: 420px 150px;
+    grid-template-rows: 400px;
     display: grid;    
 }
 
@@ -162,6 +163,7 @@ body {
 }
 
 #whoSummaryTxt {
+    grid-area: whoSummaryTxt; 
     justify-self: center;
     align-self:start;
     padding:20px;
