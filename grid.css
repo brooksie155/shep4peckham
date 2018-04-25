@@ -26,7 +26,7 @@ body {
          "leftMargin footer footer rightMargin";
 
     grid-template-columns: 15% 1fr 1fr 5%; 
-    grid-template-rows: 80px 120px 100px 5px 710px 5px auto; 
+    grid-template-rows: 80px 120px 100px 5px 550px 5px auto; 
     grid-gap: 6px;
     align-items: stretch;
     height:110%;
@@ -137,17 +137,28 @@ body {
     align-self: center;
 
     padding: 5px;  
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 420px 150px;
     display: grid;    
 }
 
 #whoSummaryImg {
     justify-self: center;
     align-self: center;
+    padding:5px;
 }
 
 #whoSummaryImg img {
     width:300px;
+    display: inline-block;
+    padding:3px;
+    margin:10px;
+}
+
+#whoSummaryImg video {
+    display: inline-block;
+    position:relative;
+    margin:10px;
+    padding:3px;
 }
 
 #whoSummaryTxt {
